@@ -17,3 +17,4 @@ def create_log(log_name):
 
     handler = logging.StreamHandler()
     handler.setLevel(logging.INFO)
+
