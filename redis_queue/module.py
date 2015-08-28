@@ -8,7 +8,7 @@ import logging
 
 
 def count_worlds_at_url(url):
-    resp = requests.get(url)
+    resp = requests.get(url,timeout=2)
     create_log(log_name="url")
     logging.info(resp.status_code)
     if resp.status_code != 200:

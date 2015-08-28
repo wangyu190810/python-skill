@@ -12,7 +12,7 @@ def create_log(log_name):
             format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
             datefmt='%m-%d %H:%M',
             filename=Config.log_folder+log_name+".log",
-            filemode='w'
+            filemode='a'
     )
 
     handler = logging.StreamHandler()
