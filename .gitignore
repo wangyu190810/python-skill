@@ -1,4 +1,5 @@
-**/config.py
+**config.py
 **.vscode
 **.idea
 **.log
+rabbitmq_rabbitpy/config.py
