@@ -1,9 +1,23 @@
 # -*-coding:utf-8-*-
 # email:190810401@qq.com
 __author__ = 'wangyu'
+import rabbitpy
+from sqlalchemy.pool import QueuePool
+from sqlalchemy import create_engine
 
 import logging
+
 from config import Config
+
+
+def rabbit_conn(rabbit_url=None):
+    conn = rabbitpy.Connection(rabbit_url)
+    return conn
+
+
+def pg_conn(database):
+    conn = create_engine(database,poolclass=QueuePool)
+    return conn.connect()
 
 
 def create_log(log_name):
@@ -17,11 +31,4 @@ def create_log(log_name):
 
     handler = logging.StreamHandler()
     handler.setLevel(logging.INFO)
-
-class TestImport(object):
-    def app(self):
-        print("asdfasdf")
-
-test = TestImport()
-
 
