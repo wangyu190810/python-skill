@@ -4,3 +4,8 @@
 **.log
 rabbitmq_rabbitpy/config.py
 rabbitmq_rabbitpy/config.py
+Algorithm/ven/Lib/site-packages/easy-install.pth
+*.txt
+Algorithm/ven/Lib/site-packages/pip-10.0.1-py3.6.egg/pip/__init__.py
+Algorithm/ven/Lib/site-packages/pip-10.0.1-py3.6.egg/pip/_internal/commands/wheel.py
+**ven
