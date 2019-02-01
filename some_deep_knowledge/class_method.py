@@ -39,6 +39,7 @@ class ClassDir(object):
         else:
             return False
 
+
     def __format__(self, format_spec):
         if isinstance(self.name,str):
             return  format_spec + self.name.upper() + format_spec
@@ -50,8 +51,6 @@ class ClassDir(object):
             return self.name.upper()
         else:
             return self.name
-
-
 
 
 
